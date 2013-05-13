@@ -1,1 +1,1 @@
-Chrome extension for CommaFeed
+CommaFeed extension for Chrome
