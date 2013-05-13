@@ -26,7 +26,7 @@ var refresh = function() {
 chrome.browserAction.onClicked.addListener(function(tab) {
   var url = localStorage["url"] || "http://www.commafeed.com";
   chrome.tabs.create({'url': url}, function(tab) {
-    refresh();
+    // do nothing
   });
 });
 
