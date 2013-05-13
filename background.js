@@ -5,7 +5,6 @@ var refresh = function() {
 	  url += '/';
 	}
 	var xhr = new XMLHttpRequest();
-	chrome.browserAction.setBadgeText({ text: '' });
 	xhr.open("GET", url + "rest/category/unreadCount", true);
 	xhr.onreadystatechange = function() {
 	  if (xhr.readyState == 4) {
@@ -14,6 +13,7 @@ var refresh = function() {
 		for(var i=0;i<resp.length;i++){
 		  count += resp[i].unreadCount;
 		}
+		if (count === 0) count = '';
 		chrome.browserAction.setBadgeText({ text: '' + count });
 	  } else {
 	    chrome.browserAction.setBadgeText({ text: '?' });

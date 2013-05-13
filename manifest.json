@@ -6,7 +6,7 @@
     "128": "icon128.png"
   },
   "description": "CommaFeed Chrome extension",
-  "version": "1.0",
+  "version": "1.1",
   "options_page": "options.html",
 
   "browser_action": {
