@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "allow" },
+    "condition": { "urlFilter": "http*://*commafeed.com/*", "resourceTypes": ["main_frame"] }
+  }
+]
