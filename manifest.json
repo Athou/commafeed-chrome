@@ -1,22 +1,28 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "CommaFeed",
   "icons": {
     "128": "icon128.png"
   },
   "description": "CommaFeed Chrome extension",
-  "version": "1.5",
+  "version": "2.0",
   "options_page": "options.html",
 
-  "browser_action": {
-    "default_icon": "icon.png"
-  },
-  "background": {
-    "scripts": ["background.js"]
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
   },
   "permissions": [
-    "http://*/*",
-    "https://*/*"
-  ]
+    "tabs",
+    "cookies",
+    "declarativeNetRequest"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }  
 }

@@ -3,3 +3,6 @@ commafeed-chrome.zip
 # IntelliJ Idea files
 .idea
 *.iml
+
+# Chrome's metadata
+_metadata
